@@ -47,6 +47,12 @@ body {
 .grid-item {
     border: 1px solid var(--border-color);
     border-radius: 10px;
+    transition: var(--transition);
+    &:hover {
+        transform: translateY(-3px);
+        border: 1px solid hsl(from var(--border-color) h s calc(l + 10));
+        box-shadow: 0 0 10px hsl(from var(--border-color) h s calc(l + 10));
+    }
 }
 
 .dev-info-container {
